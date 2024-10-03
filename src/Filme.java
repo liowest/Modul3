@@ -16,7 +16,11 @@ public class Filme extends Medium {
 
     }
 
-
+    @Override
+    public void anzeigen() {
+        super.anzeigen();
+        System.out.println(Spielzeit + "" + UHD + "" + HD + "" + ressegeur);
+    }
 
     public String getRessegeur() {
         return ressegeur;

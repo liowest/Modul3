@@ -16,6 +16,12 @@ public class eBooks extends Medium{
 
     }
 
+    @Override
+    public void anzeigen() {
+        super.anzeigen();
+        System.out.println(author+ISBN+seitenanzahl+auflage);
+    }
+
     public String getAuthor() {
         return author;
     }
