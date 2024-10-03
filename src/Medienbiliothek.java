@@ -8,7 +8,15 @@ public class Medienbiliothek {
            medium.anzeigen();
        }
     }
+public void bestimmtanzeigen(String titel){
+    for(Medium medium : medien){
+        if (medium.getTitle().equals(titel)){
+            medium.anzeigen();
+        }
+    }
+    System.out.println("Der titel ist nicht im der medienbibliothek");
 
+}
     public void medienhinzufügen(Medium medium) {
         medien.add(medium);
 
