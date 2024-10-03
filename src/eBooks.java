@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Date;
 
 public class eBooks extends Medium{
@@ -7,7 +8,7 @@ public class eBooks extends Medium{
     private int seitenanzahl;
     private int auflage;
 
-    public eBooks(String title, Genre genre, Date erscheinungsdatum, String kommentar, Urheber urheber, String author, String ISBN, int seitenanzahl, int auflage) {
+    public eBooks(String title, Genre genre, LocalDate erscheinungsdatum, String kommentar, Urheber urheber, String author, String ISBN, int seitenanzahl, int auflage) {
         super(title, genre, erscheinungsdatum, kommentar, urheber);
         setAuthor(author);
         setISBN(ISBN);

@@ -1,4 +1,4 @@
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Filme extends Medium {
 
@@ -7,7 +7,7 @@ public class Filme extends Medium {
     private boolean HD;
     private String ressegeur;
 
-    public Filme(String title, Genre genre, Date erscheinungsdatum, String kommentar, Urheber urheber, int spielzeit, boolean UHD, boolean HD, String ressegeur) {
+    public Filme(String title, Genre genre, LocalDate erscheinungsdatum, String kommentar, Urheber urheber, int spielzeit, boolean UHD, boolean HD, String ressegeur) {
         super(title, genre, erscheinungsdatum, kommentar, urheber);
        setSpielzeit(spielzeit);
         setUHD(UHD);
