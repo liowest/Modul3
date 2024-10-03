@@ -1,13 +1,14 @@
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Medium {
     private Urheber urheber;
     private String title;
     private Genre genre;
-    private Date erscheinungsdatum;
+    private LocalDate erscheinungsdatum;
     private String kommentar;
 
-    public Medium(String title, Genre genre, Date erscheinungsdatum, String kommentar, Urheber urheber ) {
+    public Medium(String title, Genre genre, LocalDate erscheinungsdatum, String kommentar, Urheber urheber ) {
         setGenre(genre);
         setTitle(title);
         setErscheinungsdatum(erscheinungsdatum);
@@ -46,11 +47,11 @@ public class Medium {
         this.genre = genre;
     }
 
-    public Date getErscheinungsdatum() {
+    public LocalDate getErscheinungsdatum() {
         return erscheinungsdatum;
     }
 
-    public void setErscheinungsdatum(Date erscheinungsdatum) {
+    public void setErscheinungsdatum(LocalDate erscheinungsdatum) {
         this.erscheinungsdatum = erscheinungsdatum;
     }
 

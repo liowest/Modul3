@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Medienbiliothek {
-    private ArrayList<Medium> medien;
+    private ArrayList<Medium> medien = new ArrayList<>();
 
     public void durchlaufen(){
        for(Medium medium : medien){
@@ -18,7 +18,10 @@ public void bestimmtanzeigen(String titel){
 
 }
     public void medienhinzufügen(Medium medium) {
-        medien.add(medium);
+
+        if(medien == null){
+            throw new RuntimeException();
+        }else {medien.add(medium);}
 
     }
 }
